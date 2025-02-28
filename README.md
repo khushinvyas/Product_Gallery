@@ -17,7 +17,7 @@ A simple and interactive **Product Gallery** built using HTML, CSS, and JavaScri
 ## Screenshot
 
 <!-- Add your project screenshot here -->
-![Product Gallery Screenshot](Screenshot 2025-02-28 214839.png)
+![Product Gallery Screenshot](./Screenshot 2025-02-28 214839.png)
 
 ---
 
