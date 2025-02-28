@@ -1,0 +1,6 @@
+node_modules
+eslint.config.js
+vite.config.ts
+tsconfig.node.json
+tsconfig.json
+tsconfig.app.json
