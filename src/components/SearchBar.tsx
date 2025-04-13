@@ -1,26 +1,14 @@
-interface SearchBarProps {
-  onSearch: (query: string) => void;
-  onSortChange: (sortBy: string) => void;
-}
-
-const SearchBar = ({ onSearch, onSortChange }: SearchBarProps) => {
+const SearchBar = ({ onSearch }) => {
   return (
-    <div className="flex items-center">
+    <div className="flex gap-4">
       <input
         type="text"
-        placeholder="Search products..."
+        placeholder="Search products"
         onChange={(e) => onSearch(e.target.value)}
-        className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="p-2 border rounded"
       />
-      <select
-        onChange={(e) => onSortChange(e.target.value)}
-        className="ml-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-        <option value="">Sort by</option>
-        <option value="name">Name</option>
-        <option value="priceLow">Price: Low to High</option>
-        <option value="priceHigh">Price: High to Low</option>
-      </select>
     </div>
   );
 };
+
+export default SearchBar;
